@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Sign up | Health Track</title>
+  </head>
+  <body>
+    <div id="root" class="signin">
+      <main>
+        <img
+          id="main-logo"
+          src="public/logo-white.svg"
+          alt="Health Track Logo"
+        />
+        <h1 class="new-account">Create your new account</h1>
+        <div id="form-container">
+          <form action="dashboard.html" class="px-4 py-3">
+            <label for="email" class="form-combo">
+              E-mail
+              <input
+                id="email"
+                class="form-input"
+                type="text"
+                placeholder="example@email.com"
+                autocomplete="email"
+                required
+              />
+            </label>
+            <label for="password" class="form-combo">
+              Password
+              <input
+                id="password"
+                class="form-input"
+                type="password"
+                placeholder="password..."
+                autocomplete="new-password"
+                required
+              />
+            </label>
+            <label for="confirm-password" class="form-combo">
+              Confirm password
+              <input
+                id="confirm-password"
+                class="form-input"
+                type="password"
+                placeholder="confirm password..."
+                autocomplete="new-password"
+                required
+              />
+            </label>
+            <button
+              type="button"
+              class="form-btn"
+              onclick="location.href='index.html'"
+            >
+              Sign Up
+            </button>
+            <div class="form-links">
+              <a href="index.html">
+                Click here to create a <strong>Sign in</strong>
+              </a>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <img
+          src="public/logo-white.svg"
+          id="footer-logo"
+          alt="Health Track Logo"
+        />
+      </footer>
+    </div>
+  </body>
+</html>

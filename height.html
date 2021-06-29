@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Height | Health Track</title>
+  </head>
+  <body>
+    <div id="root" class="dashboard">
+      <header>
+        <div class="header">
+          <nav role="navigation">
+            <div id="toggler">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="weight.html">Weight</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="height.html"
+                    >Height</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="walking.html">Walking Distance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Sign out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div>
+            <a class="navbar-brand" href="dashboard.html">
+              <img
+                src="public/logo-white.svg"
+                alt="Health Track Logo"
+                width="100"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="dashboard">
+        <div class="dashboard-header">
+          <h1>Height</h1>
+          <a href="#">Add new</a>
+        </div>
+        <div class="card">
+          <div class="card-left-measure">
+            <p class="value">1.76<small class="unit">m</small></p>
+            <div class="arrow-up green big"></div>
+          </div>
+          <div class="card-right-measure">12/12/2020</div>
+        </div>
+        <button class="add-area">+ Add</button>
+      </main>
+
+      <footer class="footer">
+        <img
+          src="public/logo-blue.svg"
+          id="footer-logo"
+          alt="Health Track Logo"
+        />
+      </footer>
+    </div>
+  </body>
+</html>

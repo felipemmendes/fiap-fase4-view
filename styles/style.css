@@ -1,0 +1,171 @@
+@import url(toggler.css);
+@import url(dasboard.css);
+@import url(icons.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #222;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+a:hover {
+  color: #1a4986;
+}
+
+#root {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root.signin {
+  background: linear-gradient(#2f80ed, #062856);
+}
+
+#root.dashboard {
+  background: #ddd;
+}
+
+main {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+#main-logo {
+  min-width: 170px;
+  width: 40%;
+  max-width: 230px;
+  margin-bottom: 50px;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80vw;
+}
+
+@media (min-width: 400px) {
+  #form-container {
+    width: 350px;
+  }
+}
+
+.form-combo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  margin-top: 10px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #666;
+  height: 40px;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid #2f80ed;
+}
+
+.form-input::placeholder {
+  color: #666;
+}
+
+.form-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: #2f80ed;
+  border: none;
+  transition: background-color 0.2s;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-btn:hover {
+  background: #1a4986;
+}
+
+.form-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.form-links a {
+  font-size: 14px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.form-links .forgot-pass {
+  color: #c51b1b;
+}
+
+.forgot-pass:hover {
+  color: #7a0d0d;
+}
+
+.new-account {
+  font-size: calc(1.25rem + 0.5vw);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+header {
+  width: 100vw;
+  height: 50px;
+  background: #2f80ed;
+  display: flex;
+  justify-content: center;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  max-width: 1200px;
+  margin: auto 0;
+  padding: 0 25px;
+}
+
+footer {
+  height: 50px;
+}
+
+#footer-logo {
+  width: 70px;
+}

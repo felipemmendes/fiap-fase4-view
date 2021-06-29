@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Health Track</title>
+  </head>
+  <body>
+    <div id="root" class="dashboard">
+      <header>
+        <div class="header">
+          <nav role="navigation">
+            <div id="toggler">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="dashboard.html"
+                  >
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="weight.html">Weight</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="height.html">Height</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="walking.html">Walking Distance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Sign out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div>
+            <a class="navbar-brand" href="dashboard.html">
+              <img
+                src="public/logo-white.svg"
+                alt="Health Track Logo"
+                width="100"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="dashboard">
+        <h1>Welcome back, John!</h1>
+        <a href="weight.html" class="card-link">
+          <div class="card">
+            <div class="card-left">
+              <div>
+                <h2 class="card-title">Weight</h2>
+                <p class="updated">(updated yesterday)</p>
+              </div>
+              <p class="value">94.2<small class="unit">kg</small></p>
+              <div class="status">
+                <div class="arrow-up red"></div>
+                <small>up from 93.8kg</small>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="goal">
+                Month Goal
+                <p class="goal-value">92.0<small class="unit">kg</small></p>
+              </div>
+              <div class="goal">
+                Year Goal
+                <p class="goal-value">88.0<small class="unit">kg</small></p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="distance.html" class="card-link">
+          <div class="card">
+            <div class="card-left">
+              <div>
+                <h2 class="card-title">Walking Distance</h2>
+              </div>
+              <p class="value">150<small class="unit">/1000m</small></p>
+              <div class="status">
+                <div class="arrow-up green"></div>
+                <small>1024m yesterday</small>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="goal">
+                Month Total
+                <p class="goal-value">12.1<small class="unit">km</small></p>
+              </div>
+              <div class="goal">
+                Year Total
+                <p class="goal-value">42.8<small class="unit">km</small></p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <button class="add-area">Add another tracking area</button>
+      </main>
+
+      <footer class="footer">
+        <img
+          src="public/logo-blue.svg"
+          id="footer-logo"
+          alt="Health Track Logo"
+        />
+      </footer>
+    </div>
+  </body>
+</html>
